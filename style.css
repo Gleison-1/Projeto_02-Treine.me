@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+
+  background: linear-gradient(180deg, rgba(227, 255, 248, 0) 82.08%, rgba(227, 255, 248, 0.38) 100%); /*função*/
+
+  min-height: 100vh; /*cobre toda a pagina visulizada, mas se a pagina aumentar não terá problmeas*/
+
+}
+
+.page {
+  width: 1000px; /*largura*/
+  margin: 0 auto;
+  padding-top: 65px;
+}
+
+nav {
+  display: flex; /*Display flexivel para alinhamentos*/
+  justify-content: space-between; /*Alinha os itens nas extremidades*/
+  align-items: center; /*alinha os elementos no mesmo eixo*/
+  margin-bottom: 58px;
+  
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; /*remove os pontos da lista desordenada*/
+  display: flex;
+  gap: 48px; /*insere um espaço entre os elementos (display flex)*/
+  font-family: "Mulish", sans-serif
+}
+
+a {
+  text-decoration: none; /*remove o sublinhando do link*/
+  color: #1F1534;
+}
+
+ul li a {
+  opacity: 0.5;
+}
+
+ul li a:hover { /*pseudo class = quando o mouse estiver em cima*/
+  font-weight: bold;
+  opacity: 1
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  font-family: "Mulish", sans-serif
+}
+
+h1 {
+  font-size: 49px;
+  line-height: 56px; /*altura da linha*/
+  color: #1F1534;
+  font-weight: normal; /*peso da fonte*/
+  width: 489px;
+}
+
+h1 span {
+  color: #89C5CC;
+  font-weight: bold;
+}
+
+section p {
+  color: #7D7987;
+  font-size: 14px;
+  line-height: 28px;
+  margin: 40px auto;
+}
+
+button {
+  color: white;
+  text-transform: uppercase; /*transforma a letra em tudo maiusculo*/
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  line-height: auto;
+  border: none; /*removeu a bordar padrão do botão*/
+  background: #69B99D; /*cor de fundo*/
+  display: flex;
+  justify-content: center; /*justificou os elementos ao centro*/
+  align-items: center; /*alinha na linha*/
+  padding: 14px 32px 15px; /*preenchimento interno*/
+  gap: 10px; /*espaço entre os elementos (icone x comece já)*/
+  border-radius: 4px; /*arrendodamento de bordar*/
+  cursor: pointer; /*habilita a mãoziha no botão*/
+}
+
+button:hover {
+  background: #439d7e;
+}
+
+footer {
+ font-size: 14px;
+ line-height: 28px;
+ text-align: center;
+ margin-top: 80px;
+}
+
+footer a {
+  font-weight: bold;
+}
+
+#balls {
+  position: fixed;
+  bottom: 0;
+  right: 0
+}
